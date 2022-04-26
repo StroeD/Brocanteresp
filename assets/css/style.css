@@ -15,19 +15,7 @@ body {
 
 
 /* HEADER */
-.header {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    height: 100px;
-    flex: 1;
-    align-items: center;
-    border: 2px solid #6D90C6;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-
-/* header {
+/* .header {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -39,36 +27,131 @@ body {
     margin-bottom: 20px;
 } */
 
+
+
+@media screen and (max-width:768px){
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        /* height: 100px; */
+        /* flex: 1; */
+        align-items: center;
+        border: 2px solid #6D90C6;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+    .logo {
+        width: 10%;
+        /* text-align: center; */
+        margin-top: 10px;
+        margin-left:10px;
+    }
+    .titleSite{
+        /* width: 80%; */
+        text-align: center;
+        font-size:4vw;
+        display:none;
+    }
+    .titleSite2{
+        /* width: 80%; */
+        text-align: center;
+        font-size:1em;
+        border: 2px solid #6D90C6;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+    #dateBla{
+        display:none;
+    }
+    .button {
+        height: 40px;
+        width: 80px;
+        margin-right:10px;
+        border-radius: 10px;
+        background-color: #6D90C6;
+    }
+    
+    .buttonValid {
+        font-size: large;
+        height: 20px;
+        width: 50%;
+        border-radius: 10px;
+        background-color: #6D90C6;
+    }
+    .imgBrocante {
+        max-width:75px;
+        min-width:75px;
+        margin-right:0px;
+        margin-top:10px;
+    }
+
+    
+}
+
 .logo {
     width: 10%;
-    text-align: center;
+    /* text-align: center; */
     margin-top: 10px;
 }
 
-.logoSite {
-    max-height: 60%;
-    max-width: 60%;
+.logo > a > img {
+    max-height: 75px;
+    max-width: 75px;
 }
 
+@media screen and (min-width:769px){
+    .header {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content:space-around;
+        /* height: 100px; */
+        flex: 1;
+        align-items: center;
+        border: 2px solid #6D90C6;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
 .titleSite {
-    width: 80%;
+    /* width: 70%; */
     text-align: center;
+    font-size: 2vw;
 }
-
-.eventDate {
-    width: 30%;
+.titleSite2{
+    /* width: 80%; */
+    text-align: center;
+    font-size:4vw;
+    display:none;
 }
-
-.connexion {
-    width: 10%;
-}
-
 .button {
     height: 40px;
     width: 120px;
     border-radius: 10px;
     background-color: #6D90C6;
 }
+.imgBrocante {
+    max-width:50px;
+    min-width:50px;
+    border-radius: 10px;
+}
+.imgBrocante {
+    max-width:75px;
+    min-width:75px;
+    margin-right:0px;
+    margin-top:10px;
+}
+}
+.eventDate {
+    /* width: 30%; */
+}
+
+.connexion {
+    max-height: 50px;
+    max-width: 50px;
+}
+
+
 
 .buttonValid {
     font-size: large;
@@ -187,10 +270,7 @@ select {
     height: 30px;
 }
 
-.imgBrocante {
-    width: 60%;
-    border-radius: 10px;
-}
+
 
 .imgBrocanteBig {
     width: 80%;
