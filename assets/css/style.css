@@ -123,6 +123,13 @@ main {
     text-align: center;
 }
 
+.pageZoning{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
 .blockZoning {
     display: flex;
     flex-wrap: wrap;
@@ -132,6 +139,7 @@ main {
     text-align: center;
     align-items: center;
 }
+
 
 .blockZoningImg {
     margin: 10px;
