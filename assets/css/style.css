@@ -429,30 +429,37 @@ legend {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    text-align: right;
-    font-style: italic;
-    flex: 2;
+}
+
+@media screen and (max-width: 981px) {
+    .profileInfoTxt{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .profileTxtInfo{
+        text-align: left!important;
+    }
 }
 
 .profileInfoTxtUser {
-    display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
-    flex: 5;
+    flex: 55%;
+    margin-left: 10px;
 }
 
 .profileTxt {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
     width: 50%;
     margin: 10px;
 }
 
 .profileTxtInfo {
-    width: 100%;
+    flex: 30%;
     height: 30px;
-    margin: 10px;
+    
+    text-align: right;
+    font-style: italic;
 }
 
 
