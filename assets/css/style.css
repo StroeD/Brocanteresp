@@ -1,14 +1,29 @@
 @import url('//fonts.googleapis.com/css?family=Electrolize:300,400,600,700&amp;lang=en');
 
+@media screen and (max-width: 568px) {
+    .infoFirst {
+    height: 100%;
+    width: 100%!important;
+    flex-direction: column!important;
+    background-color: #B5DCC9;
+    }
+    .infoGeneral {
+    width: 90vw!important;
+    font: "Fira Sans", Electrolize;
+    text-align: center!important;
+    }
+    .infoFirstBottom {
+        width: 100%;
+        flex-direction: row;
+
+    }
+}
 
 html {
-    font: 1.2em "Fira Sans", Electrolize;
+    font: 1rem "Fira Sans", Electrolize;
 }
 
 body {
-    display: flex;
-    flex-wrap: wrap;
-    height: 100%;
     flex-direction: column;
     background-color: #B5DCC9;
 }
@@ -116,11 +131,7 @@ body {
 .titleSite {
     /* width: 70%; */
     text-align: center;
-    font-size: 2vw;
 }
-.titleSite2{
-    /* width: 80%; */
-    text-align: center;
     font-size:4vw;
     display:none;
 }
