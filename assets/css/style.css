@@ -556,6 +556,10 @@ legend {
 }*/
 
 footer {
+    /* width:98.5vw;
+    position:fixed;
+    bottom:0; */
+    height:40px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
