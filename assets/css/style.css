@@ -2,22 +2,30 @@
 
 @media screen and (max-width: 568px) {
     .infoFirst {
-    height: 100%;
-    width: 100%!important;
-    flex-direction: column!important;
-    background-color: #B5DCC9;
+        height: 100%;
+        width: 100%!important;
+        flex-direction: column!important;
+        background-color: #B5DCC9;
     }
     .infoGeneral {
-    width: 90vw!important;
-    font: "Fira Sans", Electrolize;
-    text-align: center!important;
+        width: 90vw!important;
+        text-align: center!important;
     }
     .infoFirstBottom {
-        width: 100%;
-        flex-direction: row;
-
+        flex-direction: column!important;
+    }
+    .infoFirstBottomTxt {
+        margin-right: 0px!important;
+        text-align: center;
+    }
+    .blockImgBrocante {
+        margin-right: 100px;
+    }
+    .imgBrocante {
+        width: 180px!important;
     }
 }
+
 
 html {
     font: 1rem "Fira Sans", Electrolize;
