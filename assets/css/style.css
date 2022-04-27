@@ -131,8 +131,15 @@ body {
 .titleSite {
     /* width: 70%; */
     text-align: center;
+    font-size:2vw;
 }
-    font-size:4vw;
+.titleSite2{
+    /* width: 80%; */
+    text-align: center;
+    font-size:1em;
+    border: 2px solid #6D90C6;
+    border-radius: 10px;
+    margin-bottom: 20px;
     display:none;
 }
 .button {
@@ -451,26 +458,36 @@ p {
 
 /* CONNECT - NEW */
 .LFconnect {
-    width: 45%;
+    flex:1;
     margin: 2%;
     align-items: flex-start;
 }
 
 .LFnew {
-    width: 45%;
+    flex:1;
     margin: 2%;
 }
 
 input {
     max-width: 100%;
 }
-
+@media screen and (max-width:768px){
+    .infoFirstConnect {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+}
+@media screen and (min-width:768px){
 .infoFirstConnect {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     width: 100%;
     align-items: flex-start;
+}
 }
 
 legend {
@@ -709,7 +726,22 @@ textarea {
 
 
 /* CLASS STANDARD */
-
+@media screen and (min-width:769px){
+#proS{
+    display:none;
+}
+#proSText{
+    display:none;
+}
+}
+@media screen and (max-width:768px){
+    #pro{
+        display:none;
+    }
+    #proText{
+        display:none;
+    }
+    }
 .blockColumn {
     display: flex;
     flex-wrap: wrap;
@@ -719,6 +751,21 @@ textarea {
 }
 
 .blockColumn2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 5px;
+    flex: 2;
+}
+.blockColumnB {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 5px;
+    flex: 1;
+}
+
+.blockColumnB2 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -735,7 +782,7 @@ textarea {
 
 .blockRow {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex-direction: row;
 }
 

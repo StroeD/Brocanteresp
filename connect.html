@@ -42,11 +42,11 @@
                     <legend>CONNEXION</legend>
                     <div class="fieldsetInformation">
                         <div class="blockRow">
-                            <div class="blockColumn">
+                            <div class="blockColumnB">
                                 <label class="height30px txtAlignRight" for="email">Adresse mail</label>
                                 <label class="height30px txtAlignRight" for="password">Mot de passe</label>
                             </div>
-                            <div class="blockColumn2">
+                            <div class="blockColumnB2">
                                 <input type="text" name="email" id="email" placeholder="Adresse mail"
                                     value="lothiste@gmail.com">
                                 <input type="password" name="password" id="password" placeholder="Mot de passe"
@@ -63,15 +63,18 @@
                 <!-- <form method="post" action="#"> -->
                 <fieldset>
                     <legend>INSCRIPTION</legend>
-                    <div class="blockColumn justifyContent">
-                        <div class="blockColumn txtAlignCenter">
+                    <div class="blockColumnB justifyContent">
+                        <div class="blockColumnB txtAlignCenter">
                             <div class="blockRow">
-                                <div class="blockcolumn">
+                                <div class="blockColumnB">
                                     <label class="height30px" for="typeSeller">Vous êtes un vendeur : </label>
                                 </div>
-                                <div class="blockcolumn">
+                                <div class="blockColumnB">
                                     <div class="txtAlignLeft">
-                                        <input type="radio" name="typeSeller" id="pro">Professionnel
+                                        <input type="radio" name="typeSeller" id="pro"><span id="proText">Professionnel</span>
+                                    </div>
+                                    <div class="txtAlignLeft">
+                                        <input type="radio" name="typeSeller" id="proS"><span id="proSText">Pro</span>
                                     </div>
                                     <div class="txtAlignLeft">
                                         <input type="radio" name="typeSeller" id="amateur">Particulier
@@ -111,7 +114,7 @@
                                     <label for="password">Mot de passe</label>
                                 </div>
                             </div>
-                            <div class="blockColumn2 txtAlignleft">
+                            <div class="blockColumnB2 txtAlignleft">
                                 <div class="height40px ">
                                     <input class="width100" type="text" id="fName" name="fName" placeholder="Nom">
                                 </div>
