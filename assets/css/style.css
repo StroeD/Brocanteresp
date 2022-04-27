@@ -525,6 +525,17 @@ footer {
     margin-left: 100px;
 }
 
+@media screen and (max-width:1136px) {
+    .SStxtColumn{
+        flex-direction: column;
+        margin-left: auto;
+    }
+    
+}
+
+
+
+
 .txtAlignLeft {
     text-align: left;
 }
@@ -569,16 +580,19 @@ textarea {
 
 .fullreseauSociaux {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex: 1;
     margin-top: auto;
     margin-bottom: auto;
     margin-left: 30px;
+    flex-wrap: wrap;
 }
 
 .reseauSociaux {
     display: flex;
+    flex: 45%;
 }
+
 
 .imgReseauSociaux {
     width: 10%;
@@ -678,4 +692,51 @@ textarea {
 
 .width100 {
     width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* modification page contact */
+
+.blockColumnContact {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 5px;
+    flex: 1;
+}
+
+.blockRowContact {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.txtContact {
+    flex: 40%
+}
+
+
+
+@media screen and (max-width:388px) {
+    .txtContact {
+        text-align: left!important;
+    }
 }
