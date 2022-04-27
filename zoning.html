@@ -50,14 +50,15 @@
         </div> -->
         <div class="blockZoning">
             <div class="blockZoningImg">
-                <img src="assets/img/zoning.jpg">
+                <img class="hideSmall" src="assets/img/zoning.jpg">
             </div>
             <div class="blockZoningTxt">
                 <fieldset class="zoningFieldset">
                     <legend class="blockZoningTitle ">Options de l'emplacement</legend>
                     <div class="zoningSelect txtAlignCenter">
                         <label for="typeSeller">Vous êtes : </label>
-                        <input type="radio" name="typeSeller" id="pro">Professionnel
+                        <input type="radio" name="typeSeller" id="pro"><span id="proText">Professionnel</span>
+                        <input type="radio" name="typeSeller" id="proS"><span id="proSText">Pro</span>
                         <input type="radio" name="typeSeller" id="amateur">Particulier
                     </div>
                     <div class="blockRow">

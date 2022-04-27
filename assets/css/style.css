@@ -250,7 +250,6 @@ main {
 
 @media screen and (max-width:768px){
 .blockZoningImg {
-    max-width:75%;
     margin: 10px;
     flex: 3;
 }
