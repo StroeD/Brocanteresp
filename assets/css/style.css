@@ -789,9 +789,22 @@ textarea {
 .blockColumnB {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    margin: 5px;
-    flex: 1;
+    flex-direction: row;
+}
+.txtConnect{
+    flex: 50%
+}
+.inputConnect{
+    flex: 50%
+}
+
+@media screen and (max-width: 922px) {
+    .txtConnect{
+        text-align: left!important;
+    }
+    .inputConnect{
+        height: 35px;
+    }
 }
 
 .blockColumnB2 {
@@ -804,9 +817,25 @@ textarea {
 .blockColumn3 {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
     margin: 5px;
     flex: 3;
+}
+@media screen and (max-width : 434px){
+    .labelInsc{
+        text-align: left !important;
+    }
+    .inputInsc{
+        height: 35px;
+    }
+}
+
+.inputInsc{
+    flex: 50%;
+}
+.labelInsc{
+    flex: 45%;
+    text-align: right;
 }
 
 .blockRow {
