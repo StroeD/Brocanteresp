@@ -248,12 +248,19 @@ main {
     align-items: center;
 }
 
-
+@media screen and (max-width:768px){
 .blockZoningImg {
+    max-width:75%;
     margin: 10px;
     flex: 3;
 }
-
+}
+@media screen and (min-width:769px){
+    .blockZoningImg {
+        margin: 10px;
+        flex: 3;
+    }
+    }
 .blockZoningTxt {
     display: flex;
     flex-wrap: wrap;
