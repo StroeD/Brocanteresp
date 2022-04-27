@@ -1,6 +1,6 @@
 @import url('//fonts.googleapis.com/css?family=Electrolize:300,400,600,700&amp;lang=en');
 
-@media screen and (max-width: 568px) {
+@media screen and (max-width: 568px){
     .infoFirst {
         height: 100%;
         width: 100%!important;
@@ -19,13 +19,54 @@
         text-align: center;
     }
     .blockImgBrocante {
-        margin-right: 100px;
+        margin-right: 22%;
     }
-    .imgBrocante {
-        width: 180px!important;
+    .pBig {
+        text-align: center!important;
     }
+    p {
+        text-align: center;
+    }
+    .photoColumnHidden {
+        display: none;
+    }
+    .photoColumn {
+        flex-direction: row!important;
+    }
+    .imgPhotoColumn {
+        width: 75px;
+        height: 75px;
+    }
+    .blockPhotoTxt {
+        display: flex;
+        flex-direction: column!important;
+        align-items: center!important;
+    }
+    .txtColumn {
+    margin-right: 80px;
 }
-
+    .securityTxtFull {
+        margin-left: 20px!important;
+    }
+    .securityTxtFull > p {
+        font-size: medium;
+    }
+    .buttonValid {
+        height: 45px!important;
+        width: 40%;
+        border-radius: 10px;
+    }
+    .securityRight {
+        align-items: center;
+    }
+    .securityBlock {
+        flex-direction: column!important;
+    }
+    .securityImg {
+       margin-left: 30%;
+       margin-top: 3%;
+}
+}
 
 html {
     font: 1rem "Fira Sans", Electrolize;
@@ -103,8 +144,8 @@ body {
         background-color: #6D90C6;
     }
     .imgBrocante {
-        max-width:75px;
-        min-width:75px;
+        max-width: 150px;
+        max-width: 150px;
         margin-right:0px;
         margin-top:10px;
     }
@@ -167,10 +208,11 @@ body {
     margin-right:0px;
     margin-top:10px;
 }
+
+
 }
-.eventDate {
-    /* width: 30%; */
-}
+/* .eventDate {
+    /* width: 30%;
 
 .connexion {
     max-height: 50px;
