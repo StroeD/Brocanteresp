@@ -290,10 +290,21 @@ main {
     align-items: center;
 }
 
+
+
 @media screen and (max-width:768px){
 .blockZoningImg {
-    margin: 10px;
+    margin: 0px;
     flex: 3;
+    width: 100vw!important;
+}
+.blockZoning{
+    width: 100vw;
+}
+.hideSmall{
+    object-fit: scale-down;
+    width: 80vw;
+    
 }
 }
 @media screen and (min-width:769px){
