@@ -311,7 +311,10 @@ main {
     width: 20%;
     /* text-align: center; */
 }
-
+.imgCrevette{
+    max-width:75px;
+    max-height:75px;
+}
 .txtAlignCenter {
     text-align: center;
 }
