@@ -55,6 +55,8 @@
         height: 45px!important;
         width: 40%;
         border-radius: 10px;
+        margin-top: 10px;
+        margin-bottom: 15px;
     }
     .securityRight {
         align-items: center;
@@ -62,12 +64,28 @@
     .securityBlock {
         flex-direction: column!important;
     }
-    .securityImg {
-       margin-left: 30%;
-       margin-top: 3%;
+    .imgCovidBig {
+        display: none!important;
+    }
+    .imgCovidMobile {
+        display: block!important;
+        background-image: url("/assets/img/gestesBarrieresMobile.jpg");
+        max-width: 300px;
+        max-height: 600px;
+    }
+    .imgSecurity {
+       margin-left: 20%;
+       margin-top: 5%;
+}
+    .imgBrocante1 {
+    max-width: 150px;
+    border-radius: 10px;
+}
+    .imgBrocante2 {
+    max-width: 300px;
+    border-radius: 10px;
 }
 }
-
 
 
 html {
@@ -138,38 +156,35 @@ body {
         background-color: #6D90C6;
     }
     
-    .buttonValid {
+    .buttonValid { 
         font-size: large;
-        height: 40px;
+        height: 50px;
         width: 50%;
         border-radius: 10px;
         background-color: #6D90C6;
     }
-    .imgBrocante {
+    .imgCovidBig {
+        display: block;
+    }
+    .imgBrocante1 {
         max-width: 150px;
-        margin-right:0px;
-        margin-top:10px;
+        border-radius: 10px;
+    }
+    .imgBrocante2 {
+        max-width: 200px;
+        border-radius: 10px;
+    }
+    .photoColumnHidden {
+        display: none;
+    }
+    .txtColumn {
+        margin-right: 10%;
     }
 
-    
 }
 
-@media screen and (min-width:768px){
-.buttonValid {
-    height: 40px;
-    width: 120px;
-    margin-right:10px;
-    border-radius: 10px;
-    background-color: #6D90C6;
-}
-.button {
-    height: 40px;
-    width: 80px;
-    margin-right:10px;
-    border-radius: 10px;
-    background-color: #6D90C6;
-}
-}
+
+
 .logo {
     width: 10%;
     /* text-align: center; */
@@ -214,20 +229,31 @@ body {
     border-radius: 10px;
     background-color: #6D90C6;
 }
-.imgBrocante {
-    max-width:50px;
-    min-width:50px;
+.imgBrocante1 {
+    max-height: 130px;
     border-radius: 10px;
 }
-.imgBrocante {
-    max-width:75px;
-    min-width:75px;
-    margin-right:0px;
-    margin-top:10px;
+.imgBrocante2 {
+    max-height: 230px;
+    border-radius: 10px;
+}
+.blockPhotoTxt {
+    margin-right: 20%;
+}
+.photoColumn {
+    margin-right: 10%;
+}
+.photoColumnHidden {
+    margin-right: -15%;
+    margin-top: 2%;
+}
+.txtColumn {
+    margin-right: 10%;
+    margin-top: 3%;
+}
 }
 
 
-}
 /* .eventDate {
     /* width: 30%;
 
@@ -428,6 +454,7 @@ select {
 
 .securityImg {
     flex: 1;
+    margin-left: 10%;
 }
 
 .imgSecurity {
@@ -528,6 +555,10 @@ p {
 .imgCovid {
     max-width: 26%;
     border-radius: 10px;
+}
+
+.imgCovidMobile {
+    display: none;
 }
 
 .imgCovidBig {
