@@ -1,6 +1,6 @@
 @import url('//fonts.googleapis.com/css?family=Electrolize:300,400,600,700&amp;lang=en');
 
-@media screen and (max-width: 568px){
+@media screen and (max-width: 768px){
     .infoFirst {
         height: 100%;
         width: 100%!important;
@@ -42,8 +42,8 @@
         flex-direction: column!important;
         align-items: center!important;
     }
-    .txtColumn {
-    margin-right: 80px;
+    .txtColumn > ul {
+        margin-right: 10%;
 }
     .securityTxtFull {
         margin-left: 20px!important;
@@ -181,6 +181,10 @@ body {
         margin-right: 10%;
     }
 
+}
+.imgCrevette{
+    max-width:75px;
+    min-width:75px;
 }
 
 
